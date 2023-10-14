@@ -1,0 +1,25 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ChemicalAnalysisFXA/libs/javafx-swt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ChemicalAnalysisFXA/libs/javafx.media.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ChemicalAnalysisFXA/libs/poi-ooxml-lite-5.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ChemicalAnalysisFXA/libs/poi-ooxml-5.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ChemicalAnalysisFXA/libs/poi-5.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ChemicalAnalysisFXA/libs/log4j-api-2.20.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ChemicalAnalysisFXA/libs/commons-io-2.11.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ChemicalAnalysisFXA/libs/javafx.web.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ChemicalAnalysisFXA/libs/log4j-core-2.20.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ChemicalAnalysisFXA/libs/xmlbeans-5.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ChemicalAnalysisFXA/libs/commons-compress-1.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ChemicalAnalysisFXA/libs/commons-collections4-4.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ChemicalAnalysisFXA/libs/javafx.controls.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ChemicalAnalysisFXA/libs/javafx.fxml.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ChemicalAnalysisFXA/libs/javafx.graphics.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ChemicalAnalysisFXA/libs/javafx.swing.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ChemicalAnalysisFXA/libs/javafx.base.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

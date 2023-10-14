@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="980.0" maxWidth="1565.0" minHeight="980.0" minWidth="1565.0" prefHeight="980.0" prefWidth="1565.0" style="-fx-background-color: rgb(223, 251, 255);" type="AnchorPane" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane maxHeight="980.0" maxWidth="1565.0" minHeight="980.0" minWidth="1565.0" prefHeight="980.0" prefWidth="1565.0">
+         <top>
+            <Label prefHeight="43.0" prefWidth="491.0" text="Анализ конденсата на содержание ингибитора коррозии" textFill="#ae0404" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+         </top>
+         <center>
+            <BorderPane prefHeight="596.0" prefWidth="872.0" BorderPane.alignment="CENTER">
+               <top>
+                  <Line endX="1135.0" startX="-343.0" stroke="#35bc00" strokeWidth="2.0" BorderPane.alignment="CENTER" />
+               </top>
+               <center>
+                  <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <GridPane>
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="434.0" minWidth="10.0" prefWidth="191.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="812.0" minWidth="10.0" prefWidth="498.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="666.0" minWidth="0.0" prefWidth="78.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="722.0" minWidth="10.0" prefWidth="170.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1069.0" minWidth="10.0" prefWidth="94.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1069.0" minWidth="10.0" prefWidth="82.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1069.0" minWidth="10.0" prefWidth="451.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button fx:id="buttonView" mnemonicParsing="false" onAction="#buttonViewAction" prefHeight="25.0" prefWidth="130.0" text="Просмотр" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Label alignment="TOP_CENTER" prefHeight="17.0" prefWidth="154.0" text="Выборка по дате отбора" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label prefHeight="17.0" prefWidth="67.0" text="Скважина" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="CENTER" />
+                              <Label prefHeight="17.0" prefWidth="67.0" text="УППГ" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <ComboBox fx:id="comboBoxSkv" cache="true" prefHeight="25.0" prefWidth="124.0" GridPane.columnIndex="3" />
+                              <ComboBox fx:id="comboBoxUppg" prefHeight="25.0" prefWidth="124.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                              <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="124.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="211.0" minWidth="10.0" prefWidth="162.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="232.0" minWidth="10.0" prefWidth="165.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <RadioButton mnemonicParsing="false" selected="true" text="все даты">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="toggleGroupDate" />
+                                       </toggleGroup>
+                                    </RadioButton>
+                                    <RadioButton mnemonicParsing="false" text="только за" toggleGroup="$toggleGroupDate" GridPane.columnIndex="1" />
+                                    <RadioButton mnemonicParsing="false" text="диапазон" toggleGroup="$toggleGroupDate" GridPane.columnIndex="2" />
+                                 </children>
+                              </GridPane>
+                              <GridPane GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="162.0" minWidth="10.0" prefWidth="116.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="261.0" minWidth="10.0" prefWidth="200.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="236.0" minWidth="10.0" prefWidth="188.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <DatePicker fx:id="datePickerOneDate" prefHeight="25.0" prefWidth="153.0" visible="false" GridPane.columnIndex="1" />
+                                    <HBox prefHeight="30.0" prefWidth="176.0" GridPane.columnIndex="2">
+                                       <children>
+                                          <Label fx:id="labelDateB" prefHeight="17.0" prefWidth="24.0" text="с" visible="false" />
+                                          <DatePicker fx:id="datePickerRangeDateB" prefHeight="25.0" prefWidth="154.0" visible="false" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </GridPane>
+                              <GridPane GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="129.0" minWidth="10.0" prefWidth="125.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="197.0" minWidth="10.0" prefWidth="184.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="238.0" minWidth="10.0" prefWidth="188.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="123.0" text="Всего точек отбора: " />
+                                    <Label fx:id="labelCount" text="0" textFill="RED" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox prefHeight="30.0" prefWidth="176.0" GridPane.columnIndex="2">
+                                       <children>
+                                          <Label fx:id="labelDateE" prefHeight="17.0" prefWidth="24.0" text="по" visible="false" />
+                                          <DatePicker fx:id="datePickerRangeDateE" prefHeight="25.0" prefWidth="154.0" visible="false" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </GridPane>
+                              <CheckBox fx:id="checkBoxKS" mnemonicParsing="false" selected="true" text="К/С" visible="false" GridPane.columnIndex="5" />
+                              <CheckBox fx:id="checkBoxZatr" mnemonicParsing="false" selected="true" text="Затруб" visible="false" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                              <CheckBox fx:id="checkBoxUst" mnemonicParsing="false" selected="true" text="Устье" visible="false" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                              <CheckBox fx:id="checkBoxProch" mnemonicParsing="false" selected="true" text="Прочее" visible="false" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                              <CheckBox fx:id="checkBoxGlub" mnemonicParsing="false" selected="true" text="Глуб." visible="false" GridPane.columnIndex="6" />
+                              <CheckBox fx:id="checkBox79" mnemonicParsing="false" selected="true" text="7/9" visible="false" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                              <CheckBox fx:id="checkBox912" mnemonicParsing="false" selected="true" text="9/12" visible="false" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                              <CheckBox fx:id="checkBox1216" mnemonicParsing="false" selected="true" text="12/16" visible="false" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                              <MenuButton fx:id="buttonEdit" alignment="BASELINE_CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Редактор" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+                                <items>
+                                  <MenuItem mnemonicParsing="false" onAction="#buttonNewValueAction" text="Новые значения" />
+                                  <MenuItem mnemonicParsing="false" onAction="#buttonChangeValueAction" text="Изменить" />
+                                    <MenuItem mnemonicParsing="false" onAction="#buttonDeleteValueAction" text="Удалить" />
+                                </items>
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                              </MenuButton>
+                              <MenuButton alignment="BASELINE_CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Отчет" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                <items>
+                                  <MenuItem fx:id="buttonCreateExcel" mnemonicParsing="false" onAction="#buttonCreateExcelAction" text="Выгрузка в Excel" />
+                                </items>
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                              </MenuButton>
+                              <MenuButton alignment="BASELINE_CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Сортировка" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                <items>
+                                  <MenuItem fx:id="buttonSortSkvDateSel" mnemonicParsing="false" onAction="#buttonSortSkvDateSelAction" text="по № скв и дате отбора" />
+                                    <MenuItem fx:id="buttonSortDateAnalysis" mnemonicParsing="false" onAction="#buttonSortDateSelAction" text="по дате отбора" />
+                                </items>
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                              </MenuButton>
+                           </children>
+                        </GridPane>
+                        <TableView fx:id="ingibitor" prefHeight="800.0" prefWidth="1545.0">
+                          <columns>
+                              <TableColumn fx:id="n_skv" prefWidth="120.0" text="№, скв" />
+                              <TableColumn fx:id="dat_sel" prefWidth="180.0" text="Дата отбора" />
+                              <TableColumn fx:id="dat_an" prefWidth="180.0" text="Дата анализа" />
+                              <TableColumn fx:id="conc" prefWidth="250.0" text="      Концентрация&#10;         ингибитора&#10;Додиген, мг/дм³(ppm)" />
+                              <TableColumn fx:id="plot" minWidth="7.0" prefWidth="180.0" text="Плотность" />
+                              <TableColumn fx:id="note" prefWidth="620.0" text="Примечание" />
+                          </columns>
+                           <VBox.margin>
+                              <Insets left="10.0" right="10.0" top="5.0" />
+                           </VBox.margin>
+                        </TableView>
+                     </children>
+                  </VBox>
+               </center>
+            </BorderPane>
+         </center>
+      </BorderPane>
+   </children>
+</fx:root>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gpu.chemicalanalisis.MainMenuController">
+   <children>
+      <AnchorPane prefHeight="720.0" prefWidth="235.0" style="-fx-background-color: darkblue;">
+         <children>
+            <Label layoutX="38.0" layoutY="32.0" text="Выбор подсистемы" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="analisisAssociatedWatersBtn" layoutX="28.0" layoutY="78.0" mnemonicParsing="false" onAction="#switchToAnalisisAssociatedWaters" prefHeight="45.0" prefWidth="179.0" text="Анализ попутных вод">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="28.0" layoutY="140.0" mnemonicParsing="false" onAction="#switchToCompositionOfResevoirGas" prefHeight="45.0" prefWidth="179.0" text="Состав пластового газа">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="28.0" layoutY="200.0" mnemonicParsing="false" onAction="#switchToSamplesOfOrganicOrigin" prefHeight="45.0" prefWidth="179.0" text="Анализ органических&#10;проб" textAlignment="CENTER">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="28.0" layoutY="258.0" mnemonicParsing="false" onAction="#switchToSedimentAnalisis" prefHeight="45.0" prefWidth="179.0" text="Анализ отложений">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="28.0" layoutY="321.0" mnemonicParsing="false" onAction="#switchToFluidCorrosionInhibitorAnalysis" prefHeight="45.0" prefWidth="179.0" text="Анализ РИК">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="28.0" layoutY="383.0" mnemonicParsing="false" onAction="#switchToCorrosionInhibitorAnalysis" prefHeight="45.0" prefWidth="179.0" text="Содержание ингибитора &#10;коррозий" textAlignment="CENTER">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="28.0" layoutY="444.0" mnemonicParsing="false" onAction="#switchToAnalisisOfDiethyleneglycol" prefHeight="45.0" prefWidth="179.0" text="Аназиз теплоносителя">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="28.0" layoutY="508.0" mnemonicParsing="false" onAction="#switchToDieselFuelAnalisis" prefHeight="45.0" prefWidth="179.0" text="Анализ дизельного&#10;топлива" textAlignment="CENTER">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

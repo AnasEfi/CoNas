@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ChemicalAnalysisFX">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ChemicalAnalysisFXA/dist/ChemicalAnalysisFX.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

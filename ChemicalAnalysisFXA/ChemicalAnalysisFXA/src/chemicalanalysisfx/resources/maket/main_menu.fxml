@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="980.0" maxWidth="1800.0" minHeight="980.0" minWidth="1800.0" prefHeight="980.0" prefWidth="1800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane maxHeight="980.0" maxWidth="1800.0" minHeight="980.0" minWidth="1800.0" prefHeight="980.0" prefWidth="1800.0">
+         <left>
+            <VBox maxHeight="980.0" minHeight="980.0" prefHeight="980.0" prefWidth="235.0" style="-fx-background-color: rgb(198, 255, 207);" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="BASELINE_CENTER" prefHeight="17.0" prefWidth="214.0" text="Выбор подсистемы">
+                     <VBox.margin>
+                        <Insets left="10.0" top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Times New Roman Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button maxHeight="35.0" maxWidth="215.0" minHeight="35.0" minWidth="215.0" mnemonicParsing="false" onAction="#buttonPodzemAction" prefHeight="35.0" prefWidth="215.0" text="Анализ попутных вод">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="15.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button maxHeight="35.0" maxWidth="215.0" minHeight="35.0" minWidth="215.0" mnemonicParsing="false" onAction="#buttonHimanalizAction" prefHeight="35.0" prefWidth="215.0" text="Состав пластового газа">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="15.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button maxHeight="35.0" maxWidth="215.0" minHeight="35.0" minWidth="215.0" mnemonicParsing="false" onAction="#buttonProbyAction" prefHeight="35.0" prefWidth="215.0" text="Анализ органических проб">
+                     <VBox.margin>
+                        <Insets left="10.0" top="15.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button maxHeight="35.0" maxWidth="215.0" minHeight="35.0" minWidth="215.0" mnemonicParsing="false" onAction="#buttonOtlogenAction" prefHeight="35.0" prefWidth="215.0" text="Анализ отложений">
+                     <VBox.margin>
+                        <Insets left="10.0" top="15.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button maxHeight="35.0" maxWidth="215.0" minHeight="35.0" minWidth="215.0" mnemonicParsing="false" onAction="#buttonRastvorAction" prefHeight="35.0" prefWidth="215.0" text="Анализ РИК">
+                     <VBox.margin>
+                        <Insets left="10.0" top="15.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button maxHeight="35.0" maxWidth="215.0" minHeight="35.0" minWidth="215.0" mnemonicParsing="false" onAction="#buttonIngibitorAction" prefHeight="35.0" prefWidth="215.0" text="Содержание ингибитора коррозии">
+                     <VBox.margin>
+                        <Insets left="10.0" top="15.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button maxHeight="35.0" maxWidth="215.0" minHeight="35.0" minWidth="215.0" mnemonicParsing="false" onAction="#buttonProbDEGAction" prefHeight="35.0" prefWidth="215.0" text="Анализ теплоносителя">
+                     <VBox.margin>
+                        <Insets left="10.0" top="15.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button maxHeight="35.0" maxWidth="215.0" minHeight="35.0" minWidth="215.0" mnemonicParsing="false" onAction="#buttonDiztopAction" prefHeight="35.0" prefWidth="215.0" text="Анализ дизельного топлива">
+                     <VBox.margin>
+                        <Insets left="10.0" top="15.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <AnchorPane fx:id="rootPane" maxHeight="980.0" maxWidth="1565.0" minHeight="980.0" minWidth="1565.0" prefHeight="980.0" prefWidth="1565.0" style="-fx-background-color: rgb(223, 251, 255);" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

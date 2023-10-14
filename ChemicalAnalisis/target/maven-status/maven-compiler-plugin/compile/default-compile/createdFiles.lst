@@ -1,0 +1,16 @@
+com\gpu\chemicalanalisis\FluidCorrosionInhibitorAnalysisController.class
+com\gpu\chemicalanalisis\MainController.class
+com\gpu\chemicalanalisis\SedimentAnalisisController.class
+com\gpu\chemicalanalisis\editing\EditAnalisisAssocoatedWatersController.class
+com\gpu\chemicalanalisis\PrimaryController.class
+com\gpu\chemicalanalisis\MainMenuController.class
+com\gpu\chemicalanalisis\DieselFuelAnalysisController.class
+module-info.class
+com\gpu\chemicalanalisis\SamplesOfOrganicOriginController.class
+com\gpu\chemicalanalisis\AutorizationController.class
+com\gpu\chemicalanalisis\AnalisisOfDiethyleneglycolController.class
+com\gpu\chemicalanalisis\SecondaryController.class
+com\gpu\chemicalanalisis\CorrosionInhibitorAnalysisController.class
+com\gpu\chemicalanalisis\CompositionOfReservoirGasController.class
+com\gpu\chemicalanalisis\AnalisisAssociatedWaters\AnalisisAssociatedWatersController.class
+com\gpu\chemicalanalisis\App.class
