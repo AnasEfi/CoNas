@@ -5,6 +5,7 @@
 package com.gpu.chemicalanalisis;
 import java.io.IOException;
 import javafx.fxml.FXML;
+import com.gpu.chemicalanalisis.AnalisisAssociatedWaters.*;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 
@@ -25,10 +26,9 @@ public class MainMenuController extends MainController {
     
     @FXML
     private void switchToAnalisisAssociatedWaters() throws IOException {
-        String fxmlPath = "/com/gpu/chemicalanalisis/AnalisisAssociatedWaters/AnalisisAssociatedWaters.fxml";
+
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/gpu/chemicalanalisis/AnalisisAssociatedWaters.fxml"));
         Parent root = loader.load();
-
         App.setRootFromPackage(root);
     }
     @FXML

@@ -28,7 +28,6 @@ import javafx.stage.WindowEvent;
 
 
 /**
- *
  * @author ebondarenko
  */
 public class ChemicalAnalysisFX extends Application{
