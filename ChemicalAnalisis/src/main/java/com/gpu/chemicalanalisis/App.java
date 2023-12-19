@@ -12,13 +12,11 @@ import java.io.IOException;
  * JavaFX App
  */
 public class App extends Application {
-
     private static Scene scene;
-   
-    
     @Override
     public void start(Stage primaryStage) throws IOException {
-        scene = new Scene(loadFXML("MainMenu"),1080, 720); // width, height
+        scene = new Scene(loadFXML("Autorization"),421, 254); // width, height
+        primaryStage.setMaximized(false);
         primaryStage.setTitle("ХИМИЧЕСКИЙ АНАЛИЗ");
         primaryStage.setScene(scene);
         primaryStage.show();

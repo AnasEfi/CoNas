@@ -45,8 +45,7 @@ public class MainMenuController {
             FXMLLoader loader = new FXMLLoader();
             Parent root = loader.setLocation(getClass().getResource("/chemicalanalysisfx/resources/maket/podzem/podzem_main.fxml"));
             loader.setController(new PodzemController(mainmenuStage, "podzem"));
-            loader.setRoot(rootPane);
-            loader.load();
+             loader.load();
         } catch(IOException e){
             e.printStackTrace();
         }

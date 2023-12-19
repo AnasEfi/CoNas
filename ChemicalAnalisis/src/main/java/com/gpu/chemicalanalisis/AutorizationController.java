@@ -7,8 +7,14 @@ package com.gpu.chemicalanalisis;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
+import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -18,17 +24,21 @@ import java.sql.SQLException;
  *
  * @author Anastasya
  */
+
+
 public class AutorizationController implements Initializable {
-    /**
-     * Initializes the controller class.
-     */
+    private Stage primaryStage;
+    private Stage authStage;
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
-   
-   @FXML
-   public void SignUpAction(){  //Авторизация пользователя
+    }
+    @FXML
+    private TextField textfieldLogin;
+    @FXML
+    private TextField textfieldPassword;
+    @FXML
+    public void SignUpAction(){  //Авторизация пользователя
   
     String url = "jdbc:postgresql://localhost:5432/ChemicalAnalisis";
     String login = "postgres";
@@ -44,8 +54,31 @@ public class AutorizationController implements Initializable {
         e.printStackTrace();
     }
    }
+    @FXML
+    void buttonExitAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void buttonLoginAction(ActionEvent event) throws IOException {
+
+        var login = textfieldLogin.getText();
+        var pass =textfieldPassword.getText();
+        boolean isAuth = DataBaseDriver.getAuth(textfieldLogin.getText(), textfieldPassword.getText());
+        if (isAuth) App.setRoot("MainMenu");
+        else {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.initOwner(authStage);
+            alert.setTitle("Авторизация");
+            alert.setHeaderText("Ошибка");
+            alert.setContentText("Неверный логин или пароль, повторите попытку!");
+            alert.showAndWait();
+            textfieldPassword.setText("");
+        }
+    }
    @FXML
    public void exitBtnAction() throws IOException {
         App.setRoot("secondary");
-   }  
+   }
+
 }

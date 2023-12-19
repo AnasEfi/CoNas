@@ -5,7 +5,6 @@
 package com.gpu.chemicalanalisis;
 import java.io.IOException;
 import javafx.fxml.FXML;
-import com.gpu.chemicalanalisis.AnalisisAssociatedWaters.*;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 
@@ -14,7 +13,7 @@ import javafx.scene.Parent;
 
  * @author Anastasya
  */
-public class MainMenuController extends MainController {
+public class MainMenuController  {
 
     /**
      * Initializes the controller class.
@@ -22,12 +21,10 @@ public class MainMenuController extends MainController {
    // @Override
     //public void initialize(URL url, ResourceBundle rb) {
         // TODO
-   // }  
-    
+   // }
     @FXML
     private void switchToAnalisisAssociatedWaters() throws IOException {
-
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/gpu/chemicalanalisis/AnalisisAssociatedWaters.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/gpu/chemicalanalisis/AnalisisAssociatedWaters/AnalisisAssociatedWaters.fxml"));
         Parent root = loader.load();
         App.setRootFromPackage(root);
     }
@@ -35,7 +32,6 @@ public class MainMenuController extends MainController {
     private void switchToCompositionOfResevoirGas() throws IOException {
         App.setRoot("CompositionOfReservoirGas");
     }
-
     @FXML 
     private void switchToSedimentAnalisis() throws IOException{
         App.setRoot("SedimentAnalisis");

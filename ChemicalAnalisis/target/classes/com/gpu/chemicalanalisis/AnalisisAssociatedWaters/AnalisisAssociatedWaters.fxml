@@ -22,9 +22,9 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gpu.chemicalanalisis.AnalisisAssociatedWaters.AnalisisAssociatedWatersController">
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gpu.chemicalanalisis.AnalisisAssociatedWaters.AnalisisAssociatedWatersController">
    <children>
-      <BorderPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: pink;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+      <BorderPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" style="-fx-background-color: pink;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
          <top>
             <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="589.0" text="Анализ подземных вод, извлекаемых с товарной продукции" textAlignment="CENTER" textFill="#ae0404" BorderPane.alignment="CENTER">
                <font>
@@ -150,15 +150,15 @@
                               <CheckBox fx:id="checkBox1216" mnemonicParsing="false" selected="true" text="12/16" visible="false" GridPane.columnIndex="5" GridPane.rowIndex="3" />
                               <MenuButton fx:id="buttonEdit" alignment="BASELINE_CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Редактор" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
                                  <items>
-                                    <MenuItem mnemonicParsing="false" onAction="#switchToEditor" onMenuValidation="#switchToEditor" text="Новые значения" />
-                                    <MenuItem mnemonicParsing="false" text="Изменить" />
+                                    <MenuItem mnemonicParsing="false" onAction="#switchToEditor" text="Новые значения" />
+                                    <MenuItem mnemonicParsing="false" onAction="#buttonChangeValueAction" text="Изменить" />
                                     <MenuItem mnemonicParsing="false" text="Удалить" />
                                  </items>
                                  <GridPane.margin>
                                     <Insets left="10.0" />
                                  </GridPane.margin>
                               </MenuButton>
-                              <MenuButton alignment="BASELINE_CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Отчет" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                              <MenuButton alignment="BASELINE_CENTER" mnemonicParsing="false" onAction="#buttonCreateExcelAction" prefHeight="25.0" prefWidth="130.0" text="Отчет" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                                  <items>
                                     <MenuItem fx:id="buttonCreateExcel" mnemonicParsing="false" onAction="#buttonCreateExcelAction" text="Выгрузка в Excel" />
                                  </items>
@@ -178,7 +178,7 @@
                               </MenuButton>
                            </children>
                         </GridPane>
-                        <TableView fx:id="podzem" maxHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="1053.0" VBox.vgrow="ALWAYS">
+                        <TableView fx:id="podzem" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS">
                            <columns>
                               <TableColumn fx:id="n_skv" prefWidth="51.33334445953369" text="№, скв" />
                               <TableColumn fx:id="point_ot" minWidth="0.0" prefWidth="52.666683197021484" text=" Точка&#10;отбора" />
@@ -201,8 +201,8 @@
                                  </columns>
                               </TableColumn>
                               <TableColumn fx:id="kat_an" prefWidth="81.3333740234375" text="Катионы/&#10; Анионы&#10;мг-экв/дм³" />
-                              <TableColumn fx:id="raz_ion12" minWidth="7.0" prefWidth="78.66680908203125" text="    Разн.&#10;   ионов&#10;мг-экв/дм³&#10;       %" />
-                              <TableColumn fx:id="note" prefWidth="117.3333740234375" text="Примечание" />
+                              <TableColumn fx:id="raz_ion12" minWidth="7.0" prefWidth="78.66680908203125" resizable="false" text="    Разн.&#10;   ионов&#10;мг-экв/дм³&#10;       %" />
+                              <TableColumn fx:id="note" prefWidth="120.0" text="Примечание" />
                            </columns>
                           <!-- <columnResizePolicy>
                               <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
