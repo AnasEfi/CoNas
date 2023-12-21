@@ -17,7 +17,7 @@ public class DataBaseDriver {
         boolean res = false;
         try{
             Class.forName(driver);
-            Connection con = DriverManager.getConnection(url,login, password);
+            Connection con = DriverManager.getConnection(url, login, password);
             try{
                 Statement stmt = con.createStatement();
                 String sqlQuery = "select * from autorization where login='" + ulogin + "' and pass = '" + upassw + "'";

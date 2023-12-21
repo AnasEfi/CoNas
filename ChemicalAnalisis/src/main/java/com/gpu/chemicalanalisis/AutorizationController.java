@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -55,17 +56,17 @@ public class AutorizationController implements Initializable {
     }
    }
     @FXML
-    void buttonExitAction(ActionEvent event) {
-
+    void buttonExitAction(ActionEvent event) throws IOException{
+        Platform.exit();
     }
 
     @FXML
     void buttonLoginAction(ActionEvent event) throws IOException {
 
         var login = textfieldLogin.getText();
-        var pass =textfieldPassword.getText();
-        boolean isAuth = DataBaseDriver.getAuth(textfieldLogin.getText(), textfieldPassword.getText());
-        if (isAuth) App.setRoot("MainMenu");
+        var pass = textfieldPassword.getText();
+        boolean isAuth = DataBaseDriver.getAuth(login, pass);
+        if (isAuth) App.setRoot("MainMenu",1080,720);
         else {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.initOwner(authStage);
@@ -78,7 +79,7 @@ public class AutorizationController implements Initializable {
     }
    @FXML
    public void exitBtnAction() throws IOException {
-        App.setRoot("secondary");
+
    }
 
 }
