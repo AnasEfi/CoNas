@@ -116,15 +116,12 @@ public class AnalisisAssociatedWatersController extends MainController {
     public AnalisisAssociatedWatersController(){
 
     }
-    public AnalisisAssociatedWatersController(Stage primaryStage, String tablename){
-        super(primaryStage, tablename);
-    }
 
     @FXML
     private void switchToEditor() throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/gpu/chemicalanalisis/AnalisisAssociatedWaters/EditAnalisisAssocoatedWaters.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/gpu/chemicalanalisis/AnalisisAssociatedWaters/EditAnalisisAssociatedWaters.fxml"));
         Parent root = loader.load();
-        App.setRootFromPackage(root);
+        App.setRootFromPackage(root, 1200,720);
     }
 
     @FXML
@@ -161,7 +158,7 @@ public class AnalisisAssociatedWatersController extends MainController {
             newStage.initOwner(primaryStage);
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/gpu/chemicalanalisis/AnalisisAssociatedWaters/EditAnalisisAssocoatedWaters.fxml"));
             Parent root = loader.load();
-            App.setRootFromPackage(root);
+            App.setRootFromPackage(root,1200,720);
 
             // обновляем визуализацию
           /*  var new_item = new Podzem(DatabaseDriver.getRowFromDb(tablename, item.id.get()));

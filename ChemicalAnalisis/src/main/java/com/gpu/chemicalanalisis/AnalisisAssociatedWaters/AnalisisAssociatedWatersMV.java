@@ -78,4 +78,7 @@ public class AnalisisAssociatedWatersMV extends BaseViewModel {
         values.add(note.get());
         return values;
     }
+
+
+
 }

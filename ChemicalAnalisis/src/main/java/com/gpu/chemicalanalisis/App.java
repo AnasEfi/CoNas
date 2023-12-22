@@ -31,8 +31,6 @@ public class App extends Application {
         scene.setRoot(loadFXML(fxml));
         _primaryStage.setWidth(w);
         _primaryStage.setHeight(h);
-
-        javafx.geometry.Rectangle2D bounds = Screen.getPrimary().getVisualBounds();
         _primaryStage.centerOnScreen();
     }
 
@@ -40,8 +38,13 @@ public class App extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml + ".fxml"));
         return fxmlLoader.load();
     }
-    public static void setRootFromPackage(Parent rootToFXML) throws IOException {
+    public static void setRootFromPackage(Parent rootToFXML,int w, int h) throws IOException {
         scene.setRoot(rootToFXML);
+        _primaryStage.setWidth(w);
+        _primaryStage.setHeight(h);
+        _primaryStage.centerOnScreen();
+
+
     }
   
     public static void main(String[] args) {

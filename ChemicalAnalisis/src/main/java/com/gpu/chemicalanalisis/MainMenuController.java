@@ -26,7 +26,7 @@ public class MainMenuController  {
     private void switchToAnalisisAssociatedWaters() throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/gpu/chemicalanalisis/AnalisisAssociatedWaters/AnalisisAssociatedWaters.fxml"));
         Parent root = loader.load();
-        App.setRootFromPackage(root);
+        App.setRootFromPackage(root,1300,720);
     }
     @FXML
     private void switchToCompositionOfResevoirGas() throws IOException {

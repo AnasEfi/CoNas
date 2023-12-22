@@ -16,16 +16,15 @@ import javafx.stage.Stage;
  * @author Anastasya
  */
 public class MainController {
-   protected Stage primaryStage;           // текущее окно (ссылка нужна, чтобы передавать окно как родительское для новых окон)
-   protected String tablename;             // название таблицы для запросов к БД
+   //protected Stage primaryStage;           // текущее окно (ссылка нужна, чтобы передавать окно как родительское для новых окон)
+   //protected String tablename;             // название таблицы для запросов к БД
+
+          // список скважин (название, уппг, hexwell) из таблицы Infowells
     public MainController()
     {
 
     }
-    public MainController(Stage primaryStage, String tablename){
-        this.primaryStage = primaryStage;
-        this.tablename = tablename;
-    }
+
     //protected List dataVm;                  // модель данных 
     //protected ArrayList<NameFieldExcelStyle> nameFieldsExcel; // список заголовков полей для вывода отчета в excel
     public Parent loadFXML(String fxml) throws IOException{

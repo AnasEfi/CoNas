@@ -8,4 +8,6 @@ module com.gpu.chemicalanalisis {
     opens com.gpu.chemicalanalisis.AnalisisAssociatedWaters to javafx.fxml;
     exports com.gpu.chemicalanalisis;
     exports com.gpu.chemicalanalisis.AnalisisAssociatedWaters;
+    exports com.gpu.chemicalanalisis.modules;
+    opens com.gpu.chemicalanalisis.modules to javafx.fxml;
 }

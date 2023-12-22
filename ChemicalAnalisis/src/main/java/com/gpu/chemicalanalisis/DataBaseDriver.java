@@ -37,4 +37,27 @@ public class DataBaseDriver {
         }
         return res;
     }
+    public static InfoWells getListSkvInfoWells(){
+    var listSkv = new InfoWells();
+        listSkv.add(new Skv("", 0, ""));
+        try{
+        Class.forName(driver);
+        Connection con = DriverManager.getConnection(url, login, password);
+        try{
+            Statement stmt = con.createStatement();
+            String sqlQuery = "select \"nameSkv\", uppg, \"hexWell\" from \"infoWells\"  where \"hexWell\" LIKE 'r%' or \"nameSkv\" LIKE 'СКВ%'  order by \"nameSkv\"";
+            ResultSet rs = stmt.executeQuery(sqlQuery);
+            while(rs.next()){
+                listSkv.add(new Skv(rs.getString("nameSkv"), rs.getInt("uppg"), rs.getString("hexWell")));
+            }
+            rs.close();
+            stmt.close();
+        } finally{
+            con.close();
+        }
+    } catch(Exception e){
+        e.printStackTrace();
+    }
+        return listSkv;
+}
 }
