@@ -2,14 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.gpu.chemicalanalisis;
+package com.gpu.chemicalanalisis.AppUtils.Controllers;
 
 //import java.util.ArrayList;
 //import java.util.List;
 import java.io.IOException;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-import javafx.stage.Stage;
 
 /**
  *

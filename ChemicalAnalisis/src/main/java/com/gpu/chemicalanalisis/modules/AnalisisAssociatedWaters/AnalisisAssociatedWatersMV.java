@@ -1,6 +1,5 @@
-package com.gpu.chemicalanalisis.AnalisisAssociatedWaters;
-import com.gpu.chemicalanalisis.*;
-import com.gpu.chemicalanalisis.BaseViewModel;
+package com.gpu.chemicalanalisis.modules.AnalisisAssociatedWaters;
+import com.gpu.chemicalanalisis.AppUtils.Models.BaseViewModel;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import java.util.ArrayList;

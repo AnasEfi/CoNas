@@ -1,4 +1,6 @@
-package com.gpu.chemicalanalisis;
+package com.gpu.chemicalanalisis.Utils;
+
+import com.gpu.chemicalanalisis.Utils.Skv;
 
 import java.util.ArrayList;
 import java.util.List;

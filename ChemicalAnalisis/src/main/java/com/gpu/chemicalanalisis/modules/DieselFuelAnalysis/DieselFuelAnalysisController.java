@@ -2,14 +2,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
  */
-package com.gpu.chemicalanalisis;
+package com.gpu.chemicalanalisis.modules.DieselFuelAnalysis;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
- import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
+import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
@@ -28,7 +28,7 @@ import javafx.scene.control.ToggleGroup;
  *
  * @author Anastasya
  */
-public class AnalisisOfDiethyleneglycolController implements Initializable {
+public class DieselFuelAnalysisController implements Initializable {
 
     /**
      * Initializes the controller class.
@@ -37,7 +37,8 @@ public class AnalisisOfDiethyleneglycolController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }   
-   
+    @FXML
+    private TableColumn<?, ?> avto_N;
 
     @FXML
     private MenuItem buttonCreateExcel;
@@ -46,10 +47,10 @@ public class AnalisisOfDiethyleneglycolController implements Initializable {
     private MenuButton buttonEdit;
 
     @FXML
-    private MenuItem buttonSortDateAnalysis;
+    private MenuItem buttonSortDateSel;
 
     @FXML
-    private MenuItem buttonSortSkvDateSel;
+    private MenuItem buttonSortPointOt;
 
     @FXML
     private Button buttonView;
@@ -64,6 +65,12 @@ public class AnalisisOfDiethyleneglycolController implements Initializable {
     private CheckBox checkBox912;
 
     @FXML
+    private CheckBox checkBoxCist;
+
+    @FXML
+    private CheckBox checkBoxEmk;
+
+    @FXML
     private CheckBox checkBoxGlub;
 
     @FXML
@@ -73,10 +80,16 @@ public class AnalisisOfDiethyleneglycolController implements Initializable {
     private CheckBox checkBoxProch;
 
     @FXML
+    private CheckBox checkBoxSkv;
+
+    @FXML
     private CheckBox checkBoxUst;
 
     @FXML
     private CheckBox checkBoxZatr;
+
+    @FXML
+    private ComboBox<?> comboBoxAvto_N;
 
     @FXML
     private ComboBox<?> comboBoxUppg;
@@ -88,6 +101,9 @@ public class AnalisisOfDiethyleneglycolController implements Initializable {
     private TableColumn<?, ?> dat_sel;
 
     @FXML
+    private TableColumn<?, ?> dat_sel_an;
+
+    @FXML
     private DatePicker datePickerOneDate;
 
     @FXML
@@ -97,7 +113,13 @@ public class AnalisisOfDiethyleneglycolController implements Initializable {
     private DatePicker datePickerRangeDateE;
 
     @FXML
-    private TableColumn<?, ?> deg;
+    private TableView<?> diztop;
+
+    @FXML
+    private TableColumn<?, ?> frak1;
+
+    @FXML
+    private TableColumn<?, ?> frak2;
 
     @FXML
     private TableColumn<?, ?> h2o;
@@ -112,31 +134,31 @@ public class AnalisisOfDiethyleneglycolController implements Initializable {
     private Label labelDateE;
 
     @FXML
-    private TableColumn<?, ?> met;
-
-    @FXML
-    private TableColumn<?, ?> n_skv;
-
-    @FXML
     private TableColumn<?, ?> note;
-
-    @FXML
-    private TableColumn<?, ?> pH;
 
     @FXML
     private TableColumn<?, ?> plot;
 
     @FXML
-    private TableColumn<?, ?> prim;
+    private TableColumn<?, ?> point_ot;
 
     @FXML
-    private TableView<?> probDEG;
+    private TableColumn<?, ?> temp;
 
     @FXML
-    private TableColumn<?, ?> teg;
+    private TableColumn<?, ?> temp2;
 
     @FXML
-    private TextField textFieldProch;
+    private TextField textFieldAvto_N;
+
+    @FXML
+    private TextField textFieldAvto_Name;
+
+    @FXML
+    private TextField textFieldCist;
+
+    @FXML
+    private TextField textFieldEmk;
 
     @FXML
     private TextField textFieldSkv;
@@ -173,7 +195,7 @@ public class AnalisisOfDiethyleneglycolController implements Initializable {
     }
 
     @FXML
-    void buttonSortSkvDateSelAction(ActionEvent event) {
+    void buttonSortPointOtAction(ActionEvent event) {
 
     }
 
@@ -182,5 +204,9 @@ public class AnalisisOfDiethyleneglycolController implements Initializable {
 
     }
 
+    @FXML
+    void comboBoxAvto_NAction(ActionEvent event) {
+
+    }
     
 }

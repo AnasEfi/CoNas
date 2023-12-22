@@ -23,7 +23,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="com.gpu.chemicalanalisis.CompositionOfReservoirGasController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="com.gpu.chemicalanalisis.modules.CompositionOfReservoirGas.CompositionOfReservoirGasController">
    <children>
       <BorderPane layoutX="10.0" layoutY="10.0" maxHeight="980.0" maxWidth="1565.0" minHeight="980.0" minWidth="1565.0" prefHeight="980.0" prefWidth="1565.0">
          <top>

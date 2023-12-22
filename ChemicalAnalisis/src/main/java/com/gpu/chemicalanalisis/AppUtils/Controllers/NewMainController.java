@@ -1,6 +1,7 @@
-package com.gpu.chemicalanalisis;
+package com.gpu.chemicalanalisis.AppUtils.Controllers;
 
-import javafx.stage.Stage;
+import com.gpu.chemicalanalisis.AppUtils.DataBaseDriver;
+import com.gpu.chemicalanalisis.Utils.InfoWells;
 
 public class NewMainController {
     protected InfoWells infoWells;

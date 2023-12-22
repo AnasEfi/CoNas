@@ -1,28 +1,22 @@
 
-package com.gpu.chemicalanalisis.AnalisisAssociatedWaters;
+package com.gpu.chemicalanalisis.modules.AnalisisAssociatedWaters;
 import com.gpu.chemicalanalisis.*;
 import java.io.IOException;
 
+import com.gpu.chemicalanalisis.AppUtils.Controllers.MainController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 
-import java.net.URL;
-import java.util.ResourceBundle;
-
-import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuButton;
-import javafx.scene.control.MenuItem;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.ToggleGroup;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 

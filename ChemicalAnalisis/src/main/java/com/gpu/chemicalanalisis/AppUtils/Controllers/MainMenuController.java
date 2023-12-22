@@ -2,8 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
  */
-package com.gpu.chemicalanalisis;
+package com.gpu.chemicalanalisis.AppUtils.Controllers;
 import java.io.IOException;
+
+import com.gpu.chemicalanalisis.App;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

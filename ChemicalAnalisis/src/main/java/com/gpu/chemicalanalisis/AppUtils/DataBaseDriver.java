@@ -1,6 +1,8 @@
-package com.gpu.chemicalanalisis;
+package com.gpu.chemicalanalisis.AppUtils;
 
-import com.gpu.chemicalanalisis.User;
+import com.gpu.chemicalanalisis.Utils.InfoWells;
+import com.gpu.chemicalanalisis.Utils.Skv;
+import com.gpu.chemicalanalisis.Utils.User;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

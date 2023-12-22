@@ -1,4 +1,4 @@
-package com.gpu.chemicalanalisis;
+package com.gpu.chemicalanalisis.Utils;
 
 public class User {
     public static String login;

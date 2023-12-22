@@ -1,4 +1,4 @@
-package com.gpu.chemicalanalisis;
+package com.gpu.chemicalanalisis.AppUtils.Models;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

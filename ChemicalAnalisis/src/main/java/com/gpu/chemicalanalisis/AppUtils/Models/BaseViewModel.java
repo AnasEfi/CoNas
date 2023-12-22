@@ -1,4 +1,4 @@
-package com.gpu.chemicalanalisis;
+package com.gpu.chemicalanalisis.AppUtils.Models;
 import java.util.ArrayList;
 
 public class BaseViewModel {

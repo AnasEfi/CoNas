@@ -1,7 +1,7 @@
-package com.gpu.chemicalanalisis.AnalisisAssociatedWaters;
+package com.gpu.chemicalanalisis.modules.AnalisisAssociatedWaters;
 
 import com.gpu.chemicalanalisis.App;
-import com.gpu.chemicalanalisis.NewMainController;
+import com.gpu.chemicalanalisis.AppUtils.Controllers.NewMainController;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -10,8 +10,6 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 
 import java.io.IOException;
 

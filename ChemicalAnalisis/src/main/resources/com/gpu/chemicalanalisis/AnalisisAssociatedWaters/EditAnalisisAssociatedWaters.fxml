@@ -17,7 +17,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="mainFrame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="691.0" prefWidth="682.0" style="-fx-background-color: rgb(253,245,254);" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gpu.chemicalanalisis.AnalisisAssociatedWaters.EditAnalisisAssociatedWatersController">
+<AnchorPane fx:id="mainFrame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="691.0" prefWidth="682.0" style="-fx-background-color: rgb(253,245,254);" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gpu.chemicalanalisis.modules.AnalisisAssociatedWaters.EditAnalisisAssociatedWatersController">
    <children>
       <BorderPane prefHeight="691.0" prefWidth="682.0">
          <top>

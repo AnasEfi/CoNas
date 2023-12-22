@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gpu.chemicalanalisis.MainMenuController">
+<AnchorPane id="AnchorPane" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gpu.chemicalanalisis.AppUtils.Controllers.MainMenuController">
    <children>
       <AnchorPane  prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: darkblue;">
          <children>

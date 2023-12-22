@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
  */
-package com.gpu.chemicalanalisis;
+package com.gpu.chemicalanalisis.modules.FluidCorrosionInhibitorAnalysis;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -21,14 +21,14 @@ import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
-
 /**
  * FXML Controller class
  *
  * @author Anastasya
  */
-public class CorrosionInhibitorAnalysisController implements Initializable {
+public class FluidCorrosionInhibitorAnalysisController implements Initializable {
 
     /**
      * Initializes the controller class.
@@ -36,13 +36,10 @@ public class CorrosionInhibitorAnalysisController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    } 
 
     @FXML
-    private ResourceBundle resources;
-
-    @FXML
-    private URL location;
+    private TableColumn<?, ?> avto_N;
 
     @FXML
     private MenuItem buttonCreateExcel;
@@ -51,10 +48,10 @@ public class CorrosionInhibitorAnalysisController implements Initializable {
     private MenuButton buttonEdit;
 
     @FXML
-    private MenuItem buttonSortDateAnalysis;
+    private MenuItem buttonSortDateSel;
 
     @FXML
-    private MenuItem buttonSortSkvDateSel;
+    private MenuItem buttonSortPointOt;
 
     @FXML
     private Button buttonView;
@@ -69,6 +66,12 @@ public class CorrosionInhibitorAnalysisController implements Initializable {
     private CheckBox checkBox912;
 
     @FXML
+    private CheckBox checkBoxCist;
+
+    @FXML
+    private CheckBox checkBoxEmk;
+
+    @FXML
     private CheckBox checkBoxGlub;
 
     @FXML
@@ -78,25 +81,28 @@ public class CorrosionInhibitorAnalysisController implements Initializable {
     private CheckBox checkBoxProch;
 
     @FXML
+    private CheckBox checkBoxSkv;
+
+    @FXML
     private CheckBox checkBoxUst;
 
     @FXML
     private CheckBox checkBoxZatr;
 
     @FXML
-    private ComboBox<?> comboBoxSkv;
+    private ComboBox<?> comboBoxAvto_N;
 
     @FXML
-    private ComboBox<?> comboBoxUppg;
-
-    @FXML
-    private TableColumn<?, ?> conc;
+    private ComboBox<?> comboBoxUstan;
 
     @FXML
     private TableColumn<?, ?> dat_an;
 
     @FXML
     private TableColumn<?, ?> dat_sel;
+
+    @FXML
+    private TableColumn<?, ?> dat_sel_an;
 
     @FXML
     private DatePicker datePickerOneDate;
@@ -108,7 +114,13 @@ public class CorrosionInhibitorAnalysisController implements Initializable {
     private DatePicker datePickerRangeDateE;
 
     @FXML
-    private TableView<?> ingibitor;
+    private TableColumn<?, ?> h2o;
+
+    @FXML
+    private TableColumn<?, ?> kon_fak;
+
+    @FXML
+    private TableColumn<?, ?> kon_zad;
 
     @FXML
     private Label labelCount;
@@ -120,16 +132,40 @@ public class CorrosionInhibitorAnalysisController implements Initializable {
     private Label labelDateE;
 
     @FXML
-    private TableColumn<?, ?> n_skv;
-
-    @FXML
     private TableColumn<?, ?> note;
 
     @FXML
     private TableColumn<?, ?> plot;
 
     @FXML
+    private TableColumn<?, ?> point_ot;
+
+    @FXML
+    private TableColumn<?, ?> rast;
+
+    @FXML
+    private TableView<?> rastvor;
+
+    @FXML
+    private TextField textFieldAvto_N;
+
+    @FXML
+    private TextField textFieldAvto_Name;
+
+    @FXML
+    private TextField textFieldCist;
+
+    @FXML
+    private TextField textFieldEmk;
+
+    @FXML
+    private TextField textFieldSkv;
+
+    @FXML
     private ToggleGroup toggleGroupDate;
+
+    @FXML
+    private TableColumn<?, ?> ustan;
 
     @FXML
     void buttonChangeValueAction(ActionEvent event) {
@@ -157,7 +193,7 @@ public class CorrosionInhibitorAnalysisController implements Initializable {
     }
 
     @FXML
-    void buttonSortSkvDateSelAction(ActionEvent event) {
+    void buttonSortPointOtAction(ActionEvent event) {
 
     }
 
@@ -165,5 +201,13 @@ public class CorrosionInhibitorAnalysisController implements Initializable {
     void buttonViewAction(ActionEvent event) {
 
     }
-    
+
+    @FXML
+    void comboBoxAvto_NAction(ActionEvent event) {
+
+    }
+    @FXML
+    void switchToSamplesOfOrganicOrigin(ActionEvent event)
+    {}
+
 }
